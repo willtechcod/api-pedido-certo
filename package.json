@@ -7,7 +7,7 @@
     "node": "18.x"
   },
   "scripts": {
-    "start": "ts-node src/server.ts",
+    "start": "node src/server.js",
     "dev": "nodemon src/server.ts",
     "vercel-build": "npx prisma migrate deploy"
   },
