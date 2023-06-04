@@ -35,4 +35,5 @@ router.get('/test', (req: Request, res: Response) => {
     return res.json({ ok: 'Server is runing...🚀'})
 });
 
-app.listen(3333, () => console.log('Server is runing...🚀'));
+const port = process.env.PORT || 3333;
+app.listen(port, () => console.log(`Server is runing...🚀 ${port}`));
