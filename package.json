@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "engines": {
+    "node": "18"
+  },
   "scripts": {
     "dev": "nodemon src/server.ts",
+    "start": "node dist/server.js",
+    "build": "tsup src",
     "vercel-build": "npx prisma migrate deploy"
   },
   "devDependencies": {
@@ -27,6 +32,7 @@
     "express-async-errors": "^3.1.1",
     "jsonwebtoken": "^9.0.0",
     "multer": "^1.4.5-lts.1",
-    "prisma": "^4.14.1"
+    "prisma": "^4.14.1",
+    "tsup": "^6.7.0"
   }
 }
