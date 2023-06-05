@@ -9,7 +9,7 @@ import { router } from './routes';
 const app = expess();
 app.use(expess.json());
 app.use(cors());
-
+const PORT = 3333
 app.use(router);
 
 app.use(
@@ -36,4 +36,4 @@ router.get('/test', (req: Request, res: Response) => {
 });
 
 
-app.listen(process.env.PORT, () => console.log(`Server is runing...🚀`));
+app.listen(process.env.PORT || PORT, () => console.log(`Server is runing...🚀`));
