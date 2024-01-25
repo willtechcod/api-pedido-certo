@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "nodemon src/server.ts",
     "start": "node dist/server.js",
-    "build": "npx prisma migrate deploy",
+    "build": "npm run build",
     "vercel-build": "npm run vercel-build"
   },
   "devDependencies": {
